@@ -26,6 +26,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-duration: 2s;
 }
 
+.img-responsive {
+	width: 100%;
+}
 @-webkit-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
@@ -5512,6 +5515,11 @@ ul.social-icons.social-rect li a {
   text-align: center;
   border-radius: 50%;
   z-index: 1;
+}
+.features-list .features-list-icon img {
+  max-width: 175%;
+	margin-left: -25px;
+	margin-top: -25px;
 }
 .features-list .features-list-icon i {
   line-height: 72px;
