@@ -224,8 +224,22 @@
 </footer>
 <script src="assets/js/packages.min.js"></script> 
 <script src="assets/js/theme.min.js"></script> 
-<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script> 
-<script src="assets/js/map.js"></script> 
 <script src="assets/js/contact.min.js"></script>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 43.436792, lng: -80.491454},
+          zoom: 15
+        });
+		var marker = new google.maps.Marker({
+          position: {lat: 43.436792, lng: -80.491454},
+          map: map
+        });
+
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTU6lR_VTYk2tZciOn3-_0MkvrVvGgePc&callback=initMap"
+    async defer></script>
 </body>
 </html>
